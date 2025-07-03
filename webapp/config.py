@@ -10,8 +10,8 @@ class Config:
     S3_BUCKET_NAME = "assignment-secure-app-bucket"
 
     # RDS Configuration (MySQL)
-    DB_HOST = os.getenv("DB_HOST", "your-db-endpoint.rds.amazonaws.com")
-    DB_NAME = "securedb"
+    DB_HOST = os.getenv("DB_HOST", "asg2-rds.c778dhky41n9.us-east-1.rds.amazonaws.com")
+    DB_NAME = "AsgmtDB"
     DB_USER = "admin"
     DB_PASSWORD = os.getenv("DB_PASSWORD", "StrongPass123!")
 
