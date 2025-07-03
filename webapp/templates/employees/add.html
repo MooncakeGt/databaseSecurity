@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Add Employee{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Add Employee</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="EmpName" class="form-label">Name:</label>
+                    <input type="text" class="form-control" name="EmpName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="EmpEmail" class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="EmpEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="Department" class="form-label">Department:</label>
+                    <input type="text" class="form-control" name="Department" required>
+                </div>
+                <div class="mb-3">
+                    <label for="JobTitle" class="form-label">Job Title:</label>
+                    <input type="text" class="form-control" name="JobTitle" required>
+                </div>
+                <div class="mb-3">
+                    <label for="Salary" class="form-label">Salary:</label>
+                    <input type="number" class="form-control" name="Salary" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Employee</button>
+                <a href="{{ url_for('list_employees') }}" class="btn btn-secondary">Back to Table</a>
+            </form>
+        </div>
+    </div>
+{% endblock %}

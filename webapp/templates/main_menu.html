@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+            max-width: 500px; /* Adjust the max-width as needed */
+        }
+        .menu-list li {
+            margin: 10px 0;
+        }
+        .menu-list a {
+            font-size: larger;
+            display: block;
+            padding: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn {
+        background-color: black;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Assignment 2 Web Application</h1>
+        <ul class="menu-list">
+            <li><a href="{{ url_for('list_suppliers') }}" class="btn btn-primary">Suppliers</a></li>
+            <li><a href="{{ url_for('list_employees') }}" class="btn btn-primary">Employees</a></li>
+            <li><a href="{{ url_for('list_customers') }}" class="btn btn-primary">Customers</a></li>
+        </ul>
+    </div>
+</body>
+</html>
